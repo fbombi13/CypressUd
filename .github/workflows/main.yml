@@ -10,9 +10,9 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           start: "npm run start:ci"
-          wait-on: "http://localhost:8888"
+          wait-on: "https://www.themoviedb.org/"
           # let's see if the Test Runner handles url in the config
           # https://github.com/cypress-io/cypress/issues/5466
-          config: baseUrl=http://localhost:8888
+          config: baseUrl=https://www.themoviedb.org/
 
 
